@@ -79,6 +79,19 @@ var MovieDesc = React.createClass({
 	}
 })
 
+var MovieImg = React.createClass({
+	propTypes: {
+		img: React.PropTypes.object.isRequired,
+	},
+
+	render: function() {
+		return (
+			React.createElement('img', {src: this.props.img} )
+		)
+	} 
+	
+})
+
 
 var element = React.createElement(MovieList, {moviesArray: movies})
 
